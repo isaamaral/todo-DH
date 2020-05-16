@@ -33,9 +33,9 @@ form.addEventListener("submit", function(event){
     const input = document.querySelector(".js-todo-input");
 
     var text = input.value.trim();
-    if(text !== " ") {
+    if(text !== "") {
         addTodo(text);
-        input.value = " ";
+        input.value = "";
         input.focus();
     }
 })
